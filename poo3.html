@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+    background-color: aquamarine;
+    }
+    #four{   
+        font-style:italic;  
+        background-color:yellow;  
+        color:blue;  
+        font-family:Bahnschrift Light SemiCondensed;  
+        font-style:italic;  
+    }  
+    #two{   
+        font-style:italic;  
+        background-color:yellow;  
+        color:blue;  
+        font-family:Bahnschrift Light SemiCondensed;  
+        font-style:italic;  
+    }  
+</style>
+<body>
+    <form>
+        <button type="submit" text-decoration="none";><a href="poo2.html">back </a></button>
+        <center><p id="four">After dilivery</p></center>
+        <label>dispatch Time</label>
+        <input type="text" style="background-color: yellow;" 
+        placeholder="time"  required></label><br><br>
+        <center><p id="two">dilivery boy information</p></center><br><br>
+        </label><br>
+        <label>name:</label>
+        <input type="text" style="background-color: yellow;" 
+        placeholder="name"  required></label><br><br>
+        <label>contact no:</label>
+        <input type="contact" style="background-color: yellow;" 
+        placeholder="cell no"  required></label><br><br>
+        <button onclick="showAlert()" style="background-color: yellow;">
+            dispatched</button>
+        <button onclick="showAlert1()" style="background-color: yellow;">
+                dilivered</button>
+    </form>
+    <script>
+        function showAlert(){
+            alert("dilivery is dispatched")
+        }
+        function showAlert1(){
+            alert("dilivery is completed successfully")
+        }
+
+     </script> 
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-image: url("d10.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    image{
+        display: flex;
+        display: center;;
+    }
+    .g{
+        padding: 10px;
+    }
+    #four {   
+        font-style:italic;  
+        background-color:yellow;  
+        color:blue;  
+        font-family:Bahnschrift Light SemiCondensed;  
+        font-size:30px;  
+        font-style:italic;  
+    }  
+    .content{
+        /* padding: 40%; */
+        padding: 5px 5px;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        background-size: 0%;
+        background-color: rgba(156, 167, 177, 0.582);
+        box-sizing: border-box;
+    }
+    .Contact-input[type]{
+        background-color: aqua;
+    }
+    .custom-label{
+        color: blue;
+    }
+
+</style>
+<body>
+    <center>
+        <p id="four">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi nulla esse dignissimos error labore suscipit odio 
+            laudantium provident minima cumque qui expedita veritatis itaque aut enim, eum quasi ex quaerat.</p>
+        <div class="content">
+    <form>
+        <label class="custom-label">forms:</label>
+      <select  class="custom-label">
+                <option>home</option>
+                <option>edit</option>
+                <option>search</option>
+                <option>search</option>
+                <option>search</option>
+                </select>
+            </label><br><br>
+            <div class="Contact"><button type="" text-decoration="none";><a href="poo1.html">back </a></button>
+            <h2>Contact Form</h2>
+            <label>username:</label>
+            <input type="text" style="background-color: yellow;" placeholder="enter username"  required></label><br><br>
+            <label>contact no:</label>
+            <input type="text" style="background-color: yellow;" placeholder="enter username"  required></label><br><br>
+            <button onclick="showAlert1()" style="background-color: yellow;">submit</button>
+            <button onclick="showAlert()" style="background-color: yellow;">terms and condition</button>
+            <div class="Contact"><button type="text"style="background-color: yellow;" text-decoration="none";><a href="poo2.html"> terms and condition</a></button>
+
+
+
+        </div>
+    </form></div>
+    </center>
+    <script>
+        function showAlert1(){
+            alert("successfull done")
+        }
+        function showAlert(){
+            alert("permission granted")
+        }
+     </script>   
+    
+</body>
+
+</html>
