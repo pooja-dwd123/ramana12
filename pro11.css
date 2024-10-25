@@ -1,0 +1,218 @@
+<html lang="en">
+<head>
+    <link rel="pro11" href="pro2.html">
+</head>
+@import url("pro2.html")
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+
+  }
+  
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f0f0;
+  }
+  
+  .login-container {
+    position: relative;
+  }
+  
+  .login-form {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .input-box {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .input-box input {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-box label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #666;
+    pointer-events: none;
+    transition: 0.5s ease;
+  }
+  
+  
+  .input-box input:valid~label {
+    top: -20px;
+    left: 0;
+    color: #ff6347;
+    font-size: 12px;
+  }
+  
+  .input-box input:focus {
+    border-color: #ff6347;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #ff6347;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #e55d3b;
+  }
+  .container{
+    position: relative;
+    width: 256px;
+    height: 256px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container span{
+    position: absolute;
+    left: 0;
+    width: 32px;
+    height: 6px;
+    background: #2c4766;
+    border-radius: 8px;
+    transform-origin: 128px;
+    transform: scale(2.2) rotate(calc(var(--i) * (360deg / 50)));
+    animation: blink 3s linear infinite;
+    animation-delay: calc(var(--i) * (3s / 50));
+  }
+
+  @keyframes blink {
+    0%{
+        background: #0ef;
+    }
+
+    25%{
+        background: #2c4766;
+    }
+  }
+
+  .login-box {
+    position: absolute;
+    width: 400px;
+  }
+
+  form {
+    width: 100%;
+    padding: 0 50px;
+  }
+  
+  h2 {
+    font-size: 2em;
+    color: #0ef;
+    text-align: center;
+
+  }
+
+  .input-box{
+    position: relative;
+    margin: 25px 0;
+  }
+
+  input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #2c4766;
+    outline: none;
+    border-radius: 40px;
+    font-size: 1em;
+    color: #fff;
+    padding: 0 20px;
+    transition: .5s ease; 
+  }
+
+  input:focus {
+    border-color: #0ef;
+  }
+
+  label {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #fff;
+    pointer-events: none;
+    transition:  .5s ease;
+  }
+
+  input:focus~label {
+    top: 1px;
+    font-size: .8em;
+    background: #1f293a;
+    padding: 0 6px;
+    color: #0ef;
+  }
+
+  .forgot-password{
+    margin: -15px 0 10px;
+    text-align: center;
+  }
+  .forgot-password a {
+    font-size: .84em;
+    color: #0fff;
+    text-decoration: none;
+  }
+
+  .btn {
+    width: 100%;
+    height: 45px;
+    background: #0ef;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #1f293a;
+    font-weight: 600;
+  }
+
+  .signup-link {
+    margin: 20px 0 10px;
+    text-align: center;
+  }
+
+  .signup-link a {
+    font-size: 1em;
+    color: #0ef;
+    text-decoration: none;
+    font-weight: 600;
+  }
